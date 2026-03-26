@@ -1,0 +1,143 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 15% 70% 15%;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.default_header {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.default_header h1 {
+  margin: auto;
+}
+
+.default_main {
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 50%;
+  grid-template-rows: 50%;
+}
+.default_main article {
+  width: 90%;
+  margin: auto;
+}
+.default_main article h3 {
+  text-align: center;
+  border: 1px solid;
+  border-bottom: 1px solid white;
+  margin: 0px 0px 0px auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0px 10px;
+}
+.default_main article a {
+  text-decoration: none;
+  color: black;
+}
+.default_main article .novas_coisas {
+  padding: 20px;
+  border: 1px solid;
+}
+.default_main article .novas_coisas .coisas {
+  display: flex;
+  justify-content: space-around;
+}
+.default_main article .novas_coisas .coisas img {
+  border-radius: 10px;
+}
+.default_main article .novas_coisas p {
+  margin: 10px 0px 0px 0px;
+}
+.default_main article .ver_todos {
+  border: 1px solid;
+  border-top: 1px solid white;
+  padding: 0px 10px;
+}
+.default_main .redes_sociais {
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  border: 1px solid;
+  padding: 20px;
+}
+.default_main .redes_sociais ul {
+  list-style: none;
+}
+.default_main .redes_sociais ul li {
+  cursor: pointer;
+}
+
+.sobre_main .mi_vi_va {
+  list-style: none;
+  padding: 10px;
+}
+.sobre_main .mi_vi_va li:nth-child(odd) {
+  margin: 10px 0px 0px 0px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  padding: 5px;
+}
+.sobre_main .mi_vi_va li:nth-child(even) {
+  padding: 5px 10px;
+  border: 1px solid;
+}
+
+.produtos_main {
+  grid-template-rows: 100%;
+}
+.produtos_main .produtos {
+  border: 1px solid;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  padding: 10px;
+  justify-content: space-around;
+}
+.produtos_main .produtos .produto_card {
+  border: 1px solid;
+  width: 100%;
+  max-height: 250px;
+  display: grid;
+  grid-template-rows: 50% 10% 30% 10%;
+  align-items: center;
+  padding: 0px 5px;
+}
+.produtos_main .produtos .produto_card img {
+  margin: auto;
+}
+
+.default_footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.default_footer ul {
+  color: white;
+  margin: auto;
+}
+.default_footer ul a {
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

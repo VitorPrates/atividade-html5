@@ -1,0 +1,165 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html
+{
+    width: 100vw;
+    height: 100vh;
+}
+body
+{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15% 70% 15%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.default_header
+{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    h1
+    {
+        margin: auto;
+    }
+}
+.default_main
+{
+    padding: 10px ;
+    display: grid;
+    grid-template-rows: 50%;
+    grid-template-rows: 50%;
+    article
+    {
+        width: 90%;
+        margin: auto;
+        h3
+        {
+            text-align: center;
+            border: 1px solid;
+            border-bottom: 1px solid white;
+            margin: 0px 0px 0px auto;
+            width: fit-content;
+            padding: 0px 10px;
+        }
+        a
+        {
+            text-decoration: none;
+            color: black;
+        }
+        .novas_coisas
+        {
+            padding: 20px;
+            border: 1px solid;
+            .coisas
+            {
+                display: flex;
+                justify-content: space-around;
+                img
+                {
+                    border-radius: 10px;
+                }
+            }
+            p
+            {
+                margin: 10px 0px 0px 0px;
+            }
+        }
+        .ver_todos
+        {
+            border: 1px solid;
+            border-top: 1px solid white;
+            padding: 0px 10px;
+        }
+    }
+    .redes_sociais
+    {
+        margin: auto;
+        width: 90%;
+        height: 100%;
+        border: 1px solid;
+        padding: 20px;
+        ul
+        {
+            list-style: none;
+            li
+            {
+                cursor: pointer;
+            }
+        }
+    }
+}
+.sobre_main
+{
+    .mi_vi_va
+    {
+        list-style: none;
+        padding: 10px;
+        li:nth-child(odd)
+        {
+            margin: 10px 0px 0px 0px;
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 5px;
+        }
+        li:nth-child(even)
+        {
+            padding: 5px 10px;
+            border: 1px solid;
+        }
+    }
+}
+.produtos_main
+{
+    grid-template-rows: 100%;
+    .produtos
+    {
+        border: 1px solid;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        padding: 10px;
+        justify-content: space-around;
+        .produto_card
+        {
+            border: 1px solid;
+            width: 100%;
+            max-height: 250px;
+            display: grid;
+            grid-template-rows: 50% 10% 30% 10%;
+            align-items: center;
+            padding: 0px 5px;
+            img
+            {
+                margin: auto;
+            }
+        }
+    }
+}
+.default_footer
+{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ul
+    {
+        color: white;
+        margin: auto;
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
