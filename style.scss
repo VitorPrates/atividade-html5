@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rock+Salt&display=swap');
+
 *
 {
     padding: 0px;
@@ -15,7 +17,9 @@ body
     height: 100vh;
     display: grid;
     grid-template-rows: 15% 70% 15%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
 .default_header
 {
@@ -31,14 +35,16 @@ body
 }
 .default_main
 {
-    padding: 10px ;
+    padding: 10px;
     display: grid;
-    grid-template-rows: 50%;
-    grid-template-rows: 50%;
+    grid-template-rows: 50% 50%;
     article
     {
-        width: 90%;
+        width: 95%;
         margin: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         h3
         {
             text-align: center;
@@ -47,6 +53,7 @@ body
             margin: 0px 0px 0px auto;
             width: fit-content;
             padding: 0px 10px;
+            font-size: .7em;
         }
         a
         {
@@ -55,20 +62,25 @@ body
         }
         .novas_coisas
         {
-            padding: 20px;
+            padding: 7px;
             border: 1px solid;
+            font-size: .7em;
+            
             .coisas
             {
                 display: flex;
                 justify-content: space-around;
-                img
+                .item_card
                 {
-                    border-radius: 10px;
+                    img
+                    {
+                        border-radius: 10px;
+                    }   
                 }
             }
             p
             {
-                margin: 10px 0px 0px 0px;
+                margin: auto;
             }
         }
         .ver_todos
@@ -76,12 +88,15 @@ body
             border: 1px solid;
             border-top: 1px solid white;
             padding: 0px 10px;
+            font-size: 0.75em;
+            width: fit-content;
+            margin-top: -1px;
         }
     }
     .redes_sociais
     {
         margin: auto;
-        width: 90%;
+        width: 95%;
         height: 100%;
         border: 1px solid;
         padding: 20px;
@@ -121,12 +136,12 @@ body
     grid-template-rows: 100%;
     .produtos
     {
-        border: 1px solid;
+        // border: 1px solid;
         overflow-y: scroll;
         overflow-x: hidden;
         display: grid;
-        grid-template-columns: 45% 45%;
-        padding: 10px;
+        grid-template-columns: 48% 45%;
+        padding: 0px;
         justify-content: space-around;
         .produto_card
         {
@@ -134,7 +149,7 @@ body
             width: 100%;
             max-height: 250px;
             min-height: 250px;
-            margin: 10px 0px;
+            margin: 15px 0px;
             display: grid;
             grid-template-rows: 50% 10% 30% 10%;
             align-items: center;
@@ -142,6 +157,31 @@ body
             img
             {
                 margin: auto;
+            }
+            p
+            {
+                font-size: 0.8em;
+            }
+            button
+            {
+                background-color: white;
+                border: 1px solid;
+                height: 25px;
+                font-family: "Rock Salt", cursive;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.7em;
+            }
+            .descricao
+            {
+                width: 100%;
+                height: 100%;
+                overflow: scroll;
+                word-break: keep-all;
+                border: 1px solid;
+                box-shadow: 1px 1px 4px 1px black;
+                // background-color: red;
             }
         }
     }

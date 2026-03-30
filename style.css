@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rock+Salt&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -14,7 +15,9 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: 15% 70% 15%;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .default_header {
@@ -31,12 +34,14 @@ body {
 .default_main {
   padding: 10px;
   display: grid;
-  grid-template-rows: 50%;
-  grid-template-rows: 50%;
+  grid-template-rows: 50% 50%;
 }
 .default_main article {
-  width: 90%;
+  width: 95%;
   margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .default_main article h3 {
   text-align: center;
@@ -46,33 +51,39 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   padding: 0px 10px;
+  font-size: 0.7em;
 }
 .default_main article a {
   text-decoration: none;
   color: black;
 }
 .default_main article .novas_coisas {
-  padding: 20px;
+  padding: 7px;
   border: 1px solid;
+  font-size: 0.7em;
 }
 .default_main article .novas_coisas .coisas {
   display: flex;
   justify-content: space-around;
 }
-.default_main article .novas_coisas .coisas img {
+.default_main article .novas_coisas .coisas .item_card img {
   border-radius: 10px;
 }
 .default_main article .novas_coisas p {
-  margin: 10px 0px 0px 0px;
+  margin: auto;
 }
 .default_main article .ver_todos {
   border: 1px solid;
   border-top: 1px solid white;
   padding: 0px 10px;
+  font-size: 0.75em;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: -1px;
 }
 .default_main .redes_sociais {
   margin: auto;
-  width: 90%;
+  width: 95%;
   height: 100%;
   border: 1px solid;
   padding: 20px;
@@ -104,12 +115,11 @@ body {
   grid-template-rows: 100%;
 }
 .produtos_main .produtos {
-  border: 1px solid;
   overflow-y: scroll;
   overflow-x: hidden;
   display: grid;
-  grid-template-columns: 45% 45%;
-  padding: 10px;
+  grid-template-columns: 48% 45%;
+  padding: 0px;
   justify-content: space-around;
 }
 .produtos_main .produtos .produto_card {
@@ -117,7 +127,7 @@ body {
   width: 100%;
   max-height: 250px;
   min-height: 250px;
-  margin: 10px 0px;
+  margin: 15px 0px;
   display: grid;
   grid-template-rows: 50% 10% 30% 10%;
   align-items: center;
@@ -125,6 +135,27 @@ body {
 }
 .produtos_main .produtos .produto_card img {
   margin: auto;
+}
+.produtos_main .produtos .produto_card p {
+  font-size: 0.8em;
+}
+.produtos_main .produtos .produto_card button {
+  background-color: white;
+  border: 1px solid;
+  height: 25px;
+  font-family: "Rock Salt", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7em;
+}
+.produtos_main .produtos .produto_card .descricao {
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  word-break: keep-all;
+  border: 1px solid;
+  box-shadow: 1px 1px 4px 1px black;
 }
 
 .default_footer {
