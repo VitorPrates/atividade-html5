@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manda zap</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="default_header">
-        <h1>Default Store &gt;3</h1>
+        <h1><a href="index.html">Default Store &lt;3</a></h1>
     </header>
-    <main class="default_main">
+    <main class="default_main contact_main">
         <form class="contato_form" action="">
             <label for="nome">Quem é tu?</label>
-            <input type="text">
+            <input type="text" placeholder="Fulano da Silva Ribeiro">
+            <label for="email">Seu emaio</label>
+            <input type="text" placeholder="email(escrito certo)@lahele.com">
             
-            <label for="email">seu emaio</label>
-            <input type="text">
-
             <label for="email">Qual a boa?</label>
             <textarea name="mensagem" id="" placeholder="Diga ai"></textarea>
+            <div class="btns_form_contato">
+                <button type="submit">Enviar</button>
+                <button type="reset" >Limpar</button>
+            </div>
         </form>
     </main>
     <footer class="default_footer">
         <ul>
             <li><a href="index.html">menu</a></li>
             <li><a href="contato.html">Voce esta aqui</a></li>
+            <li><a href="configuracao.html">Configure o Site</a></li>
         </ul>
         <p>Todos os direitos soltos por ai</p>
     </footer>

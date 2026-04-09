@@ -1,8 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+IE:wght@100..400&family=Rock+Salt&display=swap");
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+}
+
+:root {
+  --fonte_1: "Inter", sans-serif;
+  --fonte_2: "Rock Salt", cursive;
+  --fonte_3: "Playwrite IE", cursive;
+  --cor_base-1: black;
+  --cor_base-2: rgb(51, 73, 173);
+  --cor_base-3: rgb(71, 0, 163);
+  --cor_fundo_branco:white;
+  --cor_fundo_preto:black;
+  --cor_fonte-branco: white;
+  --cor_fonte-preto: black;
 }
 
 html {
@@ -15,17 +28,20 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: 15% 70% 15%;
-  font-family: "Rock Salt", cursive;
+  font-family: var(--fonte_3);
   font-weight: 400;
   font-style: normal;
 }
 
 .default_header {
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: var(--cor_fonte-preto);
   display: flex;
   align-items: center;
+}
+.default_header h1 a {
+  color: white;
+  text-decoration: none;
 }
 .default_header h1 {
   margin: auto;
@@ -95,6 +111,12 @@ body {
   cursor: pointer;
 }
 
+.configurando_main .configurando .btn_modoescuro {
+  background-color: var(--cor_fundo_branco);
+  color: var(--cor_fonte-preto);
+  padding: 3px;
+  border-radius: 10px;
+}
 .sobre_main .mi_vi_va {
   list-style: none;
   padding: 10px;
@@ -135,6 +157,8 @@ body {
 }
 .produtos_main .produtos .produto_card img {
   margin: auto;
+  width: 100%;
+  height: 100%;
 }
 .produtos_main .produtos .produto_card p {
   font-size: 0.8em;
@@ -143,7 +167,7 @@ body {
   background-color: white;
   border: 1px solid;
   height: 25px;
-  font-family: "Rock Salt", cursive;
+  font-family: var(--fonte_3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,13 +178,51 @@ body {
   height: 100%;
   overflow: scroll;
   word-break: keep-all;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.contact_main {
+  display: flex;
+  align-items: center;
+}
+.contact_main .contato_form {
+  width: 95%;
+  max-width: 95%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.contact_main .contato_form input {
+  padding: 5px 10px;
+  font-family: var(--fonte_3);
+}
+.contact_main .contato_form textarea {
+  padding: 5px 10px;
+  max-width: 100%;
+  margin: 5px;
+  height: 110%;
+  font-family: var(--fonte_3);
+}
+.contact_main .contato_form .btns_form_contato {
+  justify-content: space-around;
+  display: flex;
+  margin: 10px 0px 0px 0px;
+}
+.contact_main .contato_form .btns_form_contato button {
+  width: 45%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
   border: 1px solid;
+  border-radius: 5px;
+  font-family: var(--fonte_3);
 }
 
 .default_footer {
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: var(--cor_fundo_preto);
+  color: var(--cor_fonte-branco);
   display: flex;
   flex-direction: column;
   align-items: center;
